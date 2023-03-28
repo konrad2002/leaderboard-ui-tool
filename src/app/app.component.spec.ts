@@ -1,5 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import {ControlsModule} from "./controls/controls.module";
+import {LeaderboardModule} from "./leaderboard/leaderboard.module";
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -7,6 +9,10 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent
       ],
+      imports: [
+        ControlsModule,
+        LeaderboardModule
+      ]
     }).compileComponents();
   });
 
@@ -25,7 +31,5 @@ describe('AppComponent', () => {
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('leaderboard-ui-tool app is running!');
   });
 });

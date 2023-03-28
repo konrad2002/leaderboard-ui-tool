@@ -1,0 +1,14 @@
+<h1>
+  Steuerung
+</h1>
+
+<app-add-entry-form
+  [leaders]="leaders"
+  (modify)="onModify()"
+></app-add-entry-form>
+
+<app-entry-list
+  [leaders]="leaders"
+  (modify)="onModify()"
+>
+</app-entry-list>

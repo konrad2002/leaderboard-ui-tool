@@ -1,0 +1,8 @@
+<h1>Leaderboard</h1>
+<ul>
+  <li *ngFor="let l of leaders; let i = index" [attr.data-index]="i">
+    <span class="rank">{{i+1}}</span>
+    <span class="name">{{l.name}}</span>
+    <span class="points">{{l.points}}</span>
+  </li>
+</ul>

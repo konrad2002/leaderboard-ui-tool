@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: Arial, serif;
+  font-weight: bold;
+}
+
+button {
+  background: #3376BC;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin: 0 4px;
+  padding: 4px;
+  border-radius: 4px;
+  min-width: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #3376BC;
+  color: white;
+}

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {Entry} from "./core/model/entry.model";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'leaderboard-ui-tool';
+
+  leaderboard: Entry[] = [];
+
+  onModify(): void {
+    console.log("change");
+    this.leaderboard.sort((a ,b): number => { return b.points - a.points; })
+  }
+
 }

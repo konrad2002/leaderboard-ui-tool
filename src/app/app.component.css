@@ -1,0 +1,20 @@
+main {
+  display: grid;
+  grid-column-gap: 0;
+  grid-template-columns: auto 0 500px;
+  grid-template-areas: "leaderboard . controls";
+  width: 100%;
+}
+
+.container {
+  display: grid;
+}
+
+app-controls {
+  grid-area: controls;
+}
+
+app-leaderboard {
+  grid-area: leaderboard;
+  padding: 30px;
+}
