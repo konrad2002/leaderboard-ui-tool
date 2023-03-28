@@ -8,8 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "build:master": "ng build",
-    "build:develop": "ng build",
+    "build:master": "ng build --base-href \"./\"",
+    "build:develop": "ng build --base-href \"./\"",
     "test:test": "ng test --browsers=ChromeHeadless --watch=false --code-coverage",
     "test:lint": "ng lint"
   },
