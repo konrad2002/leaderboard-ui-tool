@@ -140,3 +140,4 @@ jobs:
         with:
           artifacts: "build.zip"
           token: ${{ secrets.GITHUB_TOKEN }}
+          tag: "latest"
