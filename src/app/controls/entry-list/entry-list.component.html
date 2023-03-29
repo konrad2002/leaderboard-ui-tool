@@ -1,12 +1,10 @@
 <table>
   <tr>
-    <th>Platz</th>
     <th>Name</th>
     <th>Punkte</th>
     <th>Anpassen</th>
   </tr>
-  <tr *ngFor="let l of leaders; let i = index" [attr.data-index]="i">
-    <td>{{i+1}}</td>
+  <tr *ngFor="let l of leaders">
     <td>{{l.name}}</td>
     <td>{{l.points}}</td>
     <td>
