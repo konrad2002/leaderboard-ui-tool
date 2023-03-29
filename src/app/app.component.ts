@@ -10,9 +10,11 @@ export class AppComponent {
   title = 'leaderboard-ui-tool';
 
   leaderboard: Entry[] = [];
+  leaders: Entry[] = [];
 
   onModify(): void {
     console.log("change");
+    this.leaderboard = [...this.leaders];
     this.leaderboard.sort((a ,b): number => { return b.points - a.points; })
   }
 
