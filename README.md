@@ -1,5 +1,7 @@
 # LeaderboardUiTool
 
+This project includes an angular project that shows a leaderboard and configuration components were you can modify the displayed data. It was created to be used inside livestreams or other video streams.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
 
 ## Development server
